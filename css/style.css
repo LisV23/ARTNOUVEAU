@@ -1,3 +1,8 @@
+.navbar {
+    padding-top: 0.80rem;
+    padding-bottom: 0.80rem;
+}
+
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 0;
