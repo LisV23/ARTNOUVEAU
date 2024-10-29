@@ -160,7 +160,7 @@ footer {
     padding: 6em 10%;
     background-color: #E9E2C5;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100vw;
 }
@@ -171,7 +171,7 @@ footer {
 }
 
 .entradas .card {
-    margin: 0 auto;
+    margin-bottom: 3em;
 }
 
 .entradas .card-img-top {
@@ -187,7 +187,7 @@ footer {
 }
 
 .entradas .card-body > p {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-bottom: 0.75rem;
 }
 
