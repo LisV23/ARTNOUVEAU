@@ -149,9 +149,14 @@ footer {
 
 
  /* PESTAÑA ENTRADAS*/
+ 
 .entradas {
     padding: 6em 10%;
     background-color: #E9E2C5;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
 }
 
 @media screen and (max-width: 768px) {
