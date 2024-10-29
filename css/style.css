@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 html,
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background: #8d52a3;
-    padding: 15px;
+    background: #678A58;
+    /* background: #8d52a3; */
+    padding: 20px;
 }
 img {
     max-width: 100%;
@@ -24,16 +26,14 @@ header {
 }
 
 
-p,
-span {
-    color: aliceblue;
+p, span {
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
-.entradas > section {
+.entradas {
     padding: 6em 10%;
-    background-color: rgb(238, 238, 238);
+    background-color: #E9E2C5;
 }
 
 .navbar {
