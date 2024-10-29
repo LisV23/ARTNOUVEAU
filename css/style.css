@@ -18,7 +18,7 @@ body {
     padding: 20px;
 }
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     vertical-align: middle;
     display: inline-block;
@@ -163,6 +163,37 @@ footer {
     top: 60px;
     left: 0;
     width: 100vw;
+}
+
+.entradas .cartas {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.entradas .card {
+    margin: 0 auto;
+}
+
+.entradas .card-img-top {
+    height: auto;
+    object-fit: cover;
+    max-height: 10em;
+    width: 100%;
+}
+
+.entradas .card-body {
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.entradas .card-body > p {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.entradas .card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 768px) {
