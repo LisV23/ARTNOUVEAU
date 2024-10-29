@@ -68,12 +68,20 @@ body {
 
 /* GALERÍA DE IMAGENES - scroll reveal js*/
 .grid-wrapper {
-    padding: 2rem 0;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
+}
+
+.grid-wrapper {
+    padding: 6em 10%;
+    background-color: #8D52A3;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
 }
 
 .grid-wrapper > div {
@@ -153,7 +161,7 @@ footer {
 .entradas {
     padding: 6em 10%;
     background-color: #E9E2C5;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 0;
     width: 100vw;
