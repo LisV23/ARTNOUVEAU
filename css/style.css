@@ -1,3 +1,5 @@
+/* CSS COMÚN */
+
 * {
     margin: 0;
     padding: 0;
@@ -31,10 +33,11 @@ p, span {
     margin-bottom: 1rem;
 }
 
-.entradas {
-    padding: 6em 10%;
-    background-color: #E9E2C5;
+body {
+    padding-top: 4rem;
 }
+
+/* MENÚ RESPONSIVE (con bootstrap)*/
 
 .navbar {
     position: fixed;
@@ -45,9 +48,7 @@ p, span {
     z-index: 1000;
 }
 
-body {
-    padding-top: 4rem;
-}
+
 
 .navbar-toggler-icon {
     margin: 0;
@@ -60,7 +61,12 @@ body {
     align-items: center;
 }
 
-/* Main CSS */
+/* PESTAÑA PRINCIPAL */
+
+
+
+
+/* GALERÍA DE IMAGENES - scroll reveal js*/
 .grid-wrapper {
     padding: 2rem 0;
     display: grid;
@@ -139,6 +145,13 @@ footer {
     text-align: center;
     padding: 2rem;
     color: aliceblue;
+}
+
+
+ /* PESTAÑA ENTRADAS*/
+.entradas {
+    padding: 6em 10%;
+    background-color: #E9E2C5;
 }
 
 @media screen and (max-width: 768px) {
