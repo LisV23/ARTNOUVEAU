@@ -8,7 +8,7 @@ html,
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background: #511b7b;
+    background: #8d52a3;
     padding: 15px;
 }
 img {
@@ -23,9 +23,6 @@ header {
     padding: 2rem;
 }
 
-h1 {
-
-}
 
 p,
 span {
@@ -34,13 +31,28 @@ span {
     margin-bottom: 1rem;
 }
 
-
-
+.entradas > section {
+    padding: 6em 10%;
+    background-color: rgb(238, 238, 238);
+}
 
 .navbar {
-    padding-top: 0.80rem;
-    padding-bottom: 0.80rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0.8rem;
+    z-index: 1000;
 }
+
+body {
+    padding-top: 4rem;
+}
+
+.navbar-toggler-icon {
+    margin: 0;
+}
+
 
 .navbar-collapse {
     flex-basis: 100%;
