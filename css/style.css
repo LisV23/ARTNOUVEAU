@@ -11,14 +11,11 @@
 
 html,
 body {
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
     background: #678A58;
-    /* background: #8d52a3; */
-    padding: 20px;
+    /* padding: 20px; */
 }
 img {
-    /* max-width: 100%; */
     height: auto;
     vertical-align: middle;
     display: inline-block;
@@ -66,12 +63,17 @@ body {
 
 /* PESTAÑA PRINCIPAL */
 
+/* CARRUSEL */
+
+
+
 /* INTRO */
 
 .intro {
-    margin: auto;
-    padding: auto;
+    width: 100%;
+    padding: 2rem;
     background-color: #ABCFC7;
+    position: relative;
 
 }
 
@@ -79,20 +81,21 @@ body {
     color: #ff6d0c;
     display: flex;
     justify-content: center;
-
+    margin: 0%;
 }
 
 .intro > div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 2em 1em;
 }
 
 .intro > div > p {
     text-align: justify;
     width: 65%;
     font-size: 1.05em;
-    padding: 2em;
+    padding: 0 2em;
 }
 
 .intro > div > div {
@@ -109,6 +112,16 @@ body {
 
 
 /* GALERÍA DE IMAGENES - scroll reveal js*/
+
+.galeria {
+    background-color: #8D52A3;
+}
+
+.galeria h1 {
+    margin-bottom: 0;
+}
+
+
 .grid-wrapper {
     display: grid;
     grid-gap: 20px;
@@ -118,12 +131,10 @@ body {
 }
 
 .grid-wrapper {
-    padding: 6em 10%;
     background-color: #8D52A3;
+    padding: 6em 10%;
     position: absolute;
-    /* top: 60px; */
-    left: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .grid-wrapper > div {
