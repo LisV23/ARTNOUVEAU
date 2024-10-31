@@ -146,7 +146,7 @@ body {
 .grid-wrapper {
     background-color: #8D52A3;
     padding: 6em 10%;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
 }
 
