@@ -1,12 +1,17 @@
 /* CSS COMÚN */
+    /* LOGO */
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap');
+    /* TÍTULOS */
 @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Glass+Antiqua&display=swap');
+    /* LATO */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik+Mono+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Glass Antiqua" ;
-    font-weight: 700;
+    font-weight: 00;
 }
 
 html,
@@ -30,7 +35,7 @@ header {
 p, span {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    font-family: 'Avenir';
+    font-family: 'Lato';
 }
 
 body {
@@ -49,7 +54,11 @@ body {
     z-index: 1000;
 }
 
-
+.navbar-expand-lg .container-fluid > a {
+    font-family: "Fleur De Leah", cursive;
+    font-size: 2rem;
+    padding: 0;
+}
 
 .navbar-toggler-icon {
     margin: 0;
@@ -365,7 +374,7 @@ ul {
 	color: white;
 	display: block;
 	transition: all 0.3s ease;
-    font-family: 'Avenir';
+    font-family: 'Lato';
 }
 
 .footer-col ul li a:hover {
