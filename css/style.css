@@ -17,7 +17,7 @@
 html,
 body {
     /* max-width: 1200px; */
-    background: #678A58;
+    background: #8D52A3;
     /* padding: 20px; */
 }
 img {
@@ -31,6 +31,9 @@ header {
     padding: 2rem;
 }
 
+h1 {
+    text-align: center;
+}
 
 p, span {
     font-size: 1.4rem;
@@ -86,10 +89,13 @@ body {
     padding: 2rem;
     background-color: #7EA099;
     position: relative;
+
 }
 
 .compra-entradas a {
     place-self: center;
+    font-family: 'Lato';
+
 } 
 
 .btn-group-lg>.btn, .btn-lg {
@@ -106,7 +112,7 @@ body {
 
 /* INTRO */
 
-.intro {
+#intro {
     width: 100%;
     padding: 2rem;
     background-color: #ABCFC7;
@@ -114,44 +120,49 @@ body {
 
 }
 
-.intro h1 {
+#intro h1 {
     color: #ff6d0c;
     display: flex;
     justify-content: center;
     margin: 0%;
 }
 
-.intro > div {
+#intro > div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 5em 0em 0em 0em;
 }
 
-.intro > div > p {
+#intro > div > p {
     text-align: justify;
     width: 65%;
     font-size: 1.05em;
     padding: 5em 8em 0em;
 }
 
-.intro > div > div {
+#intro > div > div {
     width: 35%;
     padding: 0em 0em 0em 4em;
 }
 
-.intro > div > div > img {
+#intro > div > div > img {
     width: 80%;
     border-radius: 200px 200px 0px 0px;
 
 }
 
-.intro > .introleft {
-    padding: 2rem;
+#intro > .introleft {
+    padding: 0rem 0rem 0rem 4.75rem;
 }
 
 
 /* VISIRANOS*/
+
+
+.accordion-item .accordion-collapse .accordion-body {
+    font-size: 1.25rem;
+}
 
 .accordion-collapse {
     transition: height 0.4s ease;
@@ -159,11 +170,11 @@ body {
   
 .accordion-button {
     transition: background-color 0.4s ease, transform 0.4s ease;
+    font-size: 2rem;
+    text-align: center;
 }
   
-/* .accordion-button:not(.collapsed) {
-    background-color: #7EA099;
-} */
+
 
 
 /* GALERÍA DE IMAGENES - scroll reveal js*/
@@ -187,7 +198,7 @@ body {
 
 .grid-wrapper {
     background-color: #A0A6D6;
-    padding: 6em 10%;
+    padding: 4em 10%;
     /* position: absolute; */
     width: 100%;
 }
@@ -251,6 +262,24 @@ body {
 
 .grid-wrapper .normal > img {
     border-radius: 5rem 0rem 5rem 0rem;
+}
+
+
+.vermas {
+    width: 100%;
+    padding-bottom: 4rem;
+    background-color: #A0A6D6;
+    position: relative;
+}
+
+.vermas a {
+    place-self: center;
+}
+
+.vermas .btn-primary {
+    --bs-btn-border-color: none;
+    --bs-btn-font-size: 1.2rem;
+    padding: 1rem 10rem;
 }
 
 footer {
