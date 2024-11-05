@@ -30,7 +30,7 @@ header {
 p, span {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Avenir';
 }
 
 body {
@@ -255,7 +255,7 @@ footer {
  
 .entradas {
     padding: 6em 10%;
-    background-color: #E9E2C5;
+    background-color: #8D52A3;
     top: 50px;
     left: 0;
     width: 100vw;
@@ -268,6 +268,7 @@ footer {
 
 .entradas .card {
     margin-bottom: 3em;
+    --bs-card-border-color: none;
 }
 
 .entradas .card-img-top {
@@ -298,7 +299,7 @@ footer {
 .saber-mas {
     width: 100%;
     padding-bottom: 8rem;
-    background-color: #E9E2C5;
+    background-color: #8D52A3;
     position: relative;
 }
 
@@ -364,7 +365,7 @@ ul {
 	color: white;
 	display: block;
 	transition: all 0.3s ease;
-    font-family: 'Arial';
+    font-family: 'Avenir';
 }
 
 .footer-col ul li a:hover {
