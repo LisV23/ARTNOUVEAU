@@ -155,7 +155,7 @@ body {
 /* GALERÍA DE IMAGENES - scroll reveal js*/
 
 .galeria {
-    background-color: #8D52A3;
+    background-color: #A0A6D6;
 }
 
 .galeria h1 {
@@ -172,7 +172,7 @@ body {
 }
 
 .grid-wrapper {
-    background-color: #8D52A3;
+    background-color: #A0A6D6;
     padding: 6em 10%;
     /* position: absolute; */
     width: 100%;
@@ -288,6 +288,30 @@ footer {
 }
 
 
+/* SABER MÁS */
+
+.saber-mas {
+    width: 100%;
+    padding-bottom: 8rem;
+    background-color: #E9E2C5;
+    position: relative;
+}
+
+.saber-mas a {
+    place-self: center;
+} 
+
+.saber-mas .btn-group-lg>.btn, .btn-lg {
+    --bs-btn-padding-y: 2.5rem;
+    --bs-btn-font-size: 2.5rem;
+    padding: 1.5rem 5rem
+}
+
+.saber-mas .btn-primary {
+    --bs-btn-border-color: none;
+}
+
+
 /* FOOTER */
 
 .container {
@@ -305,7 +329,7 @@ ul {
 }
 
 .footer {
-	background-color: #F08536;
+	background-color: #5252A3;
     padding: 70px 60px 60px;
     position: relative;
 }
@@ -317,8 +341,9 @@ ul {
 }
 
 .footer-col > h5 {
-	font-size: 22px;
+	font-size: 25px;
     margin-bottom: 2rem;
+    color: white;
 }
 
 
@@ -331,14 +356,14 @@ ul {
 	text-transform: capitalize;
 	text-decoration: none;
 	font-weight: 300;
-	color: black;
+	color: white;
 	display: block;
 	transition: all 0.3s ease;
     font-family: 'Arial';
 }
 
 .footer-col ul li a:hover {
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	padding-left: 8px;
 }
 
@@ -355,7 +380,7 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-	color: var(--white);
+	color: var(--black);
 	background-color: var(--green);
 }
 
