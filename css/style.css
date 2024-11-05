@@ -33,6 +33,7 @@ header {
 
 h1 {
     text-align: center;
+    padding: 2rem;
 }
 
 p, span {
@@ -115,23 +116,24 @@ body {
 #intro {
     width: 100%;
     padding: 2rem;
-    background-color: #ABCFC7;
+    background-color: #D6F5F0;
     position: relative;
 
 }
 
-#intro h1 {
-    color: #ff6d0c;
+#intro .titulo {
+    color: #8D52A3;
     display: flex;
     justify-content: center;
     margin: 0%;
+    font-size: 4rem;
 }
 
 #intro > div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 5em 0em 0em 0em;
+    padding: 4em 0em 0em 0em;
 }
 
 #intro > div > p {
