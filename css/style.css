@@ -137,7 +137,7 @@ body {
 
 }
 
-.intro > .introleft > img{
+.intro > .introleft {
     padding: 2rem;
 }
 
