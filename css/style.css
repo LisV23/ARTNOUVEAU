@@ -133,7 +133,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 4em 0em 0em 0em;
+    /* padding: 4em 0em 0em 0em; */
 }
 
 #intro > div > p {
@@ -141,6 +141,8 @@ body {
     width: 65%;
     font-size: 1.05em;
     padding: 5em 8em 0em;
+    background-image: url('../img/mar.png');
+    /* background-color: red; */
 }
 
 #intro > div > div {
@@ -155,7 +157,7 @@ body {
 }
 
 #intro > .introleft {
-    padding: 0rem 0rem 0rem 4.75rem;
+    padding: 3rem 0rem 3rem 4.75rem;
 }
 
 
