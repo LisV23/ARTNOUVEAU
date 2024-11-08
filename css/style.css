@@ -165,7 +165,7 @@ body {
 }
 
 
-/* VISIRANOS*/
+/* VISITANOS*/
 
 
 .accordion-item .accordion-collapse .accordion-body {
@@ -299,6 +299,13 @@ footer {
 
 /* PESTAÑA ENTRADAS*/
  
+.entradas .img-entradas img {
+    height: 375px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
 .entradas {
     padding: 6em 10%;
     background-color: #8D52A3;
@@ -386,7 +393,6 @@ ul {
     padding: 70px 60px 60px;
     position: relative;
 }
-
 
 .footer-col {
    width: 25%;
