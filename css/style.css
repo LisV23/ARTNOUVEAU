@@ -160,6 +160,10 @@ body {
     padding: 3rem 0rem 3rem 4.75rem;
 }
 
+#intro > .introleft > p {
+    background-image: url('../img/marcco.png');
+}
+
 
 /* VISIRANOS*/
 
