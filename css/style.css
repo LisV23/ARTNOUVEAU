@@ -299,12 +299,25 @@ footer {
 
 /* PESTAÑA ENTRADAS*/
  
-.entradas .img-entradas img {
+.titulo-entradas {
+    display: flex;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+.entradas .titulo-entradas .img-entradas img {
     height: 375px;
     vertical-align: middle;
     display: inline-block;
 }
 
+.entradas .titulo-entradas .sobre-entradas h2 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 8rem;
+    padding-left: 5rem;
+    margin: 0;
+}
 
 .entradas {
     padding: 6em 10%;
@@ -390,7 +403,7 @@ ul {
 
 .footer {
 	background-color: #5252A3;
-    padding: 70px 60px 60px;
+    padding: 130px 60px 40px;
     position: relative;
 }
 
@@ -399,12 +412,12 @@ ul {
    padding: 0 15px;
 }
 
-.footer-col > h5 {
+/* .footer-col > h5 {
 	font-size: 25px;
     margin-bottom: 2rem;
     color: white;
 }
-
+ */
 
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -440,6 +453,26 @@ ul {
 	background-color: var(--green);
 }
 
+.footer .logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.footer .logos img {
+    width: 100px;
+    height: auto;
+}
+
+.footer .rights p {
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column;
+    padding-top: 5rem;
+    color: white;
+}
 
 /* MEDIA-QUERY */
 
