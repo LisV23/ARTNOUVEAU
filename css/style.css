@@ -304,9 +304,14 @@ footer {
     align-items: end;
     margin-bottom: 1rem;
 }
+.titulo-entradas p {
+    font-family: 'Glass Antiqua';
+    font-size: 1.9rem;
+    margin-left: 1.3rem;
+}
 
 .entradas .titulo-entradas .img-entradas img {
-    height: 375px;
+    height: 369px;
     vertical-align: middle;
     display: inline-block;
 }
@@ -417,14 +422,8 @@ ul {
     font-family: 'Glass Antiqua';
     color: white;
     font-size: 1.6rem;
+    padding: 0px 30px 0 0;
 }
-
-/* .footer-col > h5 {
-	font-size: 25px;
-    margin-bottom: 2rem;
-    color: white;
-}
- */
 
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
