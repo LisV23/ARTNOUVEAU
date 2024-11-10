@@ -8,50 +8,35 @@ ScrollReveal().reveal(".grid-wrapper > div", {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelector('#imageCardCarousel');
-    const items = carousel.querySelectorAll('.carousel-item');
+  const carousel = document.querySelector('#imageCardCarousel');
+  const items = carousel.querySelectorAll('.carousel-item');
 
-    carousel.addEventListener('slide.bs.carousel', function () {
-      items.forEach(item => {
-        item.style.transition = 'transform 1.5s ease-in-out'; // Ajusta la duración y tipo de transición
-      });
+  carousel.addEventListener('slide.bs.carousel', function () {
+    items.forEach(item => {
+      item.style.transition = 'transform 1.5s ease-in-out'; 
     });
-
-    // const navLinks = document.querySelectorAll('a[href^="#"]');
-  
-    // navLinks.forEach(link => {
-    //   link.addEventListener("click", function(event) {
-    //     // Prevenir el comportamiento por defecto (el salto inmediato)
-    //     event.preventDefault();
-  
-    //     // Selecciona el destino (la sección correspondiente) usando el atributo href del enlace
-    //     const targetSection = document.querySelector(this.getAttribute("href"));
-  
-    //     // Desplazamiento suave hacia la sección
-    //     targetSection.scrollIntoView({
-    //       behavior: "smooth",
-    //       block: 'start'
-    //     });
-    //   });
-    // });
-
+  });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('a[href^="#"]');
+  
+  navLinks.forEach(link => {
+      link.addEventListener("click", function(e) {
+          e.preventDefault();
 
-// document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//       e.preventDefault();
-//       const target = document.querySelector(this.getAttribute('href'));
-//       if (target) {
-//         target.scrollIntoView({
-//           behavior: 'smooth',
-//           block: 'start'
-//         });
-//       }
-//     });
-// });
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          targetElement.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+          });
+      });
+  });
+});
 
 AOS.init({
-    duration: 1000, // Duración de la animación en ms
-    easing: 'ease', // Efecto de la animación
+    duration: 1000, 
+    easing: 'ease',
 });

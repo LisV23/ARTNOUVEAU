@@ -16,10 +16,9 @@
 
 html,
 body {
-    /* max-width: 1200px; */
     background: #8D52A3;
-    /* padding: 20px; */
 }
+
 img {
     height: auto;
     vertical-align: middle;
@@ -79,37 +78,13 @@ body {
     width: 90%;
 }
 
-
-
-/* COMPRA ENTRADAS */
-
-.compra-entradas {
-    width: 100%;
-    padding: 2rem;
-    background-color: #7EA099;
-    position: relative;
-
+.main h1 {
+    font-size: 5rem;
+    top: 50%; 
+    left: 33%;
 }
 
-.compra-entradas a {
-    place-self: center;
-    font-family: 'Lato';
-
-} 
-
-.btn-group-lg>.btn, .btn-lg {
-    --bs-btn-padding-y: 2.5rem;
-    --bs-btn-font-size: 2.5rem;
-    padding: 3rem 7rem
-}
-
-.btn-primary {
-    --bs-btn-border-color: none;
-}
-
-
-
-/* INTRO */
+/* PESTAÑA INDEX */
 
 #intro {
     width: 100%;
@@ -131,7 +106,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* padding: 4em 0em 0em 0em; */
 }
 
 #intro > div > p {
@@ -164,10 +138,7 @@ body {
 
 }
 
-
-
-
-/* VISITANOS*/
+    /* VISITANOS*/
 
 #horarios .titulo {
     color: #D6F5F0;
@@ -226,6 +197,7 @@ body {
 #mapa {
     flex: 1;
     max-width: 600px;
+    
 }
   
 .map {
@@ -236,6 +208,12 @@ body {
     gap: 10px;
     color: rgb(255, 255, 255);
     padding: 7rem 0rem 0rem 1rem;
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
 }
   
 .iconomap {
@@ -251,7 +229,6 @@ body {
     margin: 0%;
     font-size: 4rem;
 }
-
 
 .accordion {
     width: 80%; 
@@ -293,9 +270,7 @@ body {
     color: white;
 }
 
-
-
-/* GALERÍA DE IMAGENES - scroll reveal js*/
+    /* GALERÍA DE IMAGENES - scroll reveal js*/
 
 .galeria {
     background-color: #A0A6D6;
@@ -308,7 +283,6 @@ body {
     margin: 0%;
     font-size: 4rem;
 }
-
 
 .grid-wrapper {
     display: grid;
@@ -386,7 +360,6 @@ body {
     border-radius: 5rem 0rem 5rem 0rem;
 }
 
-
 .vermas {
     width: 100%;
     padding-bottom: 4rem;
@@ -412,9 +385,6 @@ body {
 .vermas .btn-primary:hover {
     background-color: #2E5A51;
 }
-
-
-
 
 footer {
     text-align: center;
@@ -483,7 +453,7 @@ footer {
 }
 
 
-/* SABER MÁS */
+    /* SABER MÁS */
 
 .saber-mas {
     width: 100%;
@@ -517,6 +487,21 @@ footer {
     color: #8D52A3;
 }
 
+.artistas > p {
+    padding: 3rem 7rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    margin: 10px;
+    border: none;
+}
+
 .carousel-inner {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -532,10 +517,23 @@ footer {
 }
 
 
+
+
 #pintura {
     background-color: #A0A6D6;
 }
 
+#arquitectura {
+    background-color: #A0A6D6;
+}
+
+#mobiliario {
+    background-color: #A0A6D6;
+}
+
+#joyeria {
+    background-color: #A0A6D6;
+}
 
 .grid-wrapper1 {
     display: grid;
@@ -563,15 +561,10 @@ footer {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* .grid-wrapper1 > div:hover > img {
-    transform: scale(1.05); 
-    opacity: 0.9; 
-} */
-
 .grid-wrapper1 > div:hover > img {
-    transform: scale(1.08) rotate(1deg); /* Escala y rotación leve */
+    transform: scale(1.08) rotate(1deg);
     opacity: 0.9;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transiciones suaves */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .grid-wrapper1 .square1 {
@@ -583,7 +576,6 @@ footer {
 }
 
 .grid-wrapper1 .square2 {
-    grid-column: span 1;
     grid-row: span 1;
 }
 
@@ -592,7 +584,6 @@ footer {
 }
 .grid-wrapper1 .square3 {
     grid-row: span 1;
-    border-radius: 5px;
 }
 
 .grid-wrapper1 .square3 > img {
@@ -638,10 +629,6 @@ footer {
 .grid-wrapper1 .square8 > img {
     border-radius: 0rem 0rem 0rem 8rem;
 }
-
-
-
-
 
 /* FOOTER */
 
@@ -746,6 +733,103 @@ ul {
 
 @media screen and (max-width: 820px) {
 
+    .navbar {
+        padding: 1.5rem; /* Incrementa el padding para hacerla más grande */
+    }
+
+    .navbar-expand-lg .container-fluid > a {
+        font-size: 2.5rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    .navbar-toggler-icon {
+        width: 2rem; /* Incrementa el tamaño del icono de la hamburguesa */
+        height: 2rem;
+    }
+
+    /* PAGINA INDEX */
+
+    .main h1 {
+        font-size: 3rem;
+        left: 50%;
+        width: 90%;
+    }
+
+    .main {
+        align-items: center;
+    }
+
+
+    #intro {
+        padding: 1rem 1rem 3rem;
+    }
+    
+    #intro .titulo {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    #intro > div {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+    
+    #intro > div > p {
+        width: 70%;
+        padding: 3em 4em;
+        font-size: 1rem;
+    }
+    
+    #intro > div > div {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #intro > div > div > img {
+        width: 50%;
+    }
+
+    #intro .introleft {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 4.5rem 0rem 4.5rem;
+    }
+    
+    .vermas .btn-primary {
+        --bs-btn-font-size: 2rem;
+        padding: 1rem 5rem;
+    }
+    
+    #horarios .titulo,
+    #donde .titulo,
+    #llegar .titulo {
+        font-size: 2.5rem;
+    }
+    
+    .iconocalendar,
+    .iconomap {
+        font-size: 5rem;
+    }
+
+    .cont {
+        padding:2rem ;
+    }
+
+    #mapa iframe {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .accordion-button {
+        font-size: 1.5rem;
+    }
+    
+    .accordion-item .accordion-collapse .accordion-body {
+        font-size: 1rem;
+    }
+
     /* PÁGINA ENTRADAS */
     .titulo-entradas {
         display: flex;
@@ -783,7 +867,106 @@ ul {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
+
+    /* PESTAÑA INDEX */
+    
+    .main h1 {
+        font-size: 2rem;
+        left: 50%;
+        width: 90%;
+    }
+
+    .main {
+        align-items: center;
+    }
+
+    #intro > div > p {
+        width: 80%;
+        padding: 3em 2em;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    #intro > div > div {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #intro > div > div > img {
+        width: 70%;
+    }
+
+    #intro .introleft {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 4.5rem 0rem 4.5rem;
+    }
+
+    #horarios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    #horarios .dias {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #horarios .semana {
+        padding-left: 2rem;
+    }
+
+    #horarios .iconocalendar {
+        font-size: 6rem;
+    }
+
+    #donde {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #donde .titulo {
+        font-size: 3rem;
+    }
+
+    .cont {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .map {
+        padding: 2rem 0;
+    }
+
+    #mapa {
+        max-width: 100%;
+    }
+
+    #mapa iframe {
+        height: 300px;
+    }
+
+    .iconomap {
+        font-size: 6rem;
+    }
+
+    .vermas .btn-primary {
+        --bs-btn-font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+
+
     /* COMPRA ENTRADAS */
     .compra-entradas {
         padding: 1rem;
@@ -799,7 +982,6 @@ ul {
         --bs-btn-font-size: 1.4rem;
         padding: 1.5rem 2.5rem;
     }
-
 
     /* PESTAÑA ENTRADAS */
     .titulo-entradas {
@@ -831,8 +1013,28 @@ ul {
         font-size: 1.3rem;
     }
 
+    /* PESTAÑA GALERIA */
+
+    .artistas > p {
+        padding: 2rem 1rem;
+        font-size: 14px;
+    }
+
+    .card-img-top {
+        height: 100px;
+    }
+
+    .card {
+        width: 50%;
+        margin: 5px;
+    }
+
+    .card-body > p {
+        font-size: 0.80rem;
+    }
 
     /* FOOTER */
+
     .footer {
         padding: 60px 20px 20px;
     }
