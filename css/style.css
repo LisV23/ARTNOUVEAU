@@ -12,9 +12,10 @@
     box-sizing: border-box;
     font-family: "Glass Antiqua" ;
     font-weight: 00;
+
 }
 
-html,
+
 body {
     background: #8D52A3;
 }
@@ -563,7 +564,7 @@ footer {
 }
 
 .grid-wrapper1 .square1 {
-    grid-column: span 1;
+    grid-row: span 1;
 }
 
 .grid-wrapper1 .square1 > img {
@@ -571,6 +572,7 @@ footer {
 }
 
 .grid-wrapper1 .square2 {
+    grid-column: span 1;
     grid-row: span 1;
 }
 
@@ -862,7 +864,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
 
     /* PESTAÑA INDEX */
     
@@ -961,6 +963,31 @@ ul {
         padding: 1rem 3rem;
     }
 
+    /* PESTAÑA GALERIA */
+
+    .artistas > p {
+        padding: 2rem 1rem;
+        font-size: 14px;
+    }
+
+    .card-img-top {
+        height: 100px;
+    }
+
+    .card {
+        width: 50%;
+        margin: 5px;
+    }
+
+    .card-body > p {
+        font-size: 0.80rem;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 430px) {
 
     /* COMPRA ENTRADAS */
     .compra-entradas {
@@ -1014,26 +1041,6 @@ ul {
 
     .entradas .card-title {
         font-size: 1.3rem;
-    }
-
-    /* PESTAÑA GALERIA */
-
-    .artistas > p {
-        padding: 2rem 1rem;
-        font-size: 14px;
-    }
-
-    .card-img-top {
-        height: 100px;
-    }
-
-    .card {
-        width: 50%;
-        margin: 5px;
-    }
-
-    .card-body > p {
-        font-size: 0.80rem;
     }
 
     /* FOOTER */
