@@ -395,61 +395,56 @@ footer {
 
 /* PESTAÑA ENTRADAS*/
  
-.titulo-entradas {
-    display: flex;
-    align-items: end;
-    margin-bottom: 1rem;
-}
 .titulo-entradas p {
     font-family: 'Glass Antiqua';
-    font-size: 1.9rem;
-    margin-left: 1.3rem;
+    font-size: 1.5rem;
+    margin: 1rem 0 0;
+    text-align: center;
 }
 
 .entradas .titulo-entradas .img-entradas img {
-    height: 369px;
-    vertical-align: middle;
-    display: inline-block;
+    margin-top: 3rem;
+    max-height: 200px;
 }
 
 .entradas {
-    padding: 6em 10%;
-    background-color: #8D52A3;
-    top: 50px;
-    left: 0;
-    width: 100vw;
+    padding: 2em 5%;
 }
 
 .entradas .cartas {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .entradas .card {
-    margin-bottom: 3em;
-    --bs-card-border-color: none;
+    margin-bottom: 2em;
 }
 
 .entradas .card-img-top {
     height: auto;
     object-fit: cover;
-    max-height: 10em;
+    max-height: 8em;
     width: 100%;
 }
 
 .entradas .card-body {
     border-radius: 0 0 5px 5px;
     background-color: rgba(255, 255, 255, 0);
+    padding: 1rem;
 }
 
 .entradas .card-body > p {
-    font-size: 1.4rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .entradas .card-title {
-    margin-bottom: 0.75rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.entradas .card-title {
+    font-size: 1.3rem;
 }
 
 
@@ -867,7 +862,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 430px) {
 
     /* PESTAÑA INDEX */
     
@@ -1002,6 +997,14 @@ ul {
     .entradas .cartas {
         margin-top: 2rem;
         margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entradas .card {
+        width: 90%;
+        margin: 0.5em 0;  
     }
 
     .entradas .card-body > p {
