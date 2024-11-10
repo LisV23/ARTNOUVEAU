@@ -18,139 +18,332 @@
 
     <!-- SCROLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #A1DEC1;"> 
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Entre Lineas y Flores</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg" style="background-color: #A1DEC1;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Entre Lineas y Flores</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Intro</a>
-              </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#visita" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Visita
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html #horarios">Horario</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html #donde">Dónde estamos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html #llegar">Como Llegar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Colección
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#pintura">Pintura</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#arquitectura">Arquitectura</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#mobiliario">Mobiliario Decorativo</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#joyeria">Joyería</a></li>
+              </ul>
+            </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Visita
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Horario</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Dónde estamos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Como Llegar</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Colección
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Pintura</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Arquitectura</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Mobiliario Decorativo</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Joyería</a></li>
-                </ul>
-              </li>
-
-            </ul>
-            <form class="d-flex" role="entradas">
-              <a href="entradas.html" target="_blank" class="btn btn-outline-success">Entradas</a>
-            </form>    
-          </div>
+          </ul>
+          <form class="d-flex" role="entradas">
+            <a href="entradas.html" target="_blank" class="btn btn-outline-success">Obtener entradaas</a>
+          </form>          
         </div>
+      </div>
     </nav>
 
+        <!-- CARRUSEL -->
+    <!-- <section>
+      <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img carrusel 3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img carrusel 2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img carrusel 11.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="fondo">
+      <div>
+        <h1>Explora nuestra gran colección de obras traidas de los museos mas emblemáticos del movimiento Art Nouveau</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-casa.jpg" class="card-img-top" alt="Image 1">
+              </div>
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-casa1.jpg" class="card-img-top" alt="Image 2">
+              </div>
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-casa2.jpg" class="card-img-top" alt="Image 3">
+              </div>
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-casa3.jpg" class="card-img-top" alt="Image 4">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-ceramica.jpg" class="card-img-top" alt="Image 5">
+              </div>
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-ceramica1.jpg" class="card-img-top" alt="Image 6">
+              </div>
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-ceramica2.jpg" class="card-img-top" alt="Image 5">
+              </div>
+              <div class="card" style="width: 18rem; margin: 10px;">
+                <img src="img/galeria-escalera.jpg" class="card-img-top" alt="Image 6">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCardCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCardCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
     <!-- PINTURA -->
-    <section id="pintura">
-        <h1>Introducción</h1>
-        <div>
-          <p>Adentrate a nuestra exposición dedicada al fascinante mundo del Art Nouveau, un movimiento artístico que transformó la estética y el diseño a finales del siglo XIX y principios del XX. Aquí, los visitantes tendrán la oportunidad de sumergirse en un recorrido que abarca las múltiples facetas de este estilo innovador, desde la pintura y la arquitectura hasta el mobiliario y la joyería.</p>
-          <div>
-            <img src="img/img introo2.jpg">
-          </div>
-        </div>
-        <div class="introleft">
-          <div>
-            <img src="img/img introo3.jpg">
-          </div>
-          <p>Además, la exposición incluye espacios interactivos donde se explica el contexto histórico del movimiento y se presentan documentos, bocetos y fotografías que ilustran el desarrollo de este estilo y su impacto en la vida cotidiana de la época.</p>
-        </div>  
-        <div>
-          <p>En esta exposición, cada sala ofrece una oportunidad para descubrir cómo el Art Nouveau, con su pasión por lo orgánico y lo decorativo, redefinió los límites entre el arte y la funcionalidad, transformando los espacios y objetos cotidianos en auténticas obras de arte. ¡Esperamos que disfruten del recorrido!</p>
-          <div>
-            <img src="img/img introo1.jpg">
-          </div>
-        </div>
-      </section>
       
-
-
-      <section id="imagen">
-        <div id="horarios">
-          <h1>Horarios</h1>
-          <p>Adentrate a nuestra exposición dedicada al fascinante mundo del Art Nouveau, un movimiento artístico que transformó la estética y el diseño a finales del siglo XIX y principios del XX. Aquí, los visitantes tendrán la oportunidad de sumergirse en un recorrido que abarca las múltiples facetas de este estilo innovador, desde la pintura y la arquitectura hasta el mobiliario y la joyería.</p>
-        </div>
-        <div id="donde">
-          <h1>Donde estamos</h1>
-          <p>Adentrate a nuestra exposición dedicada al fascinante mundo del Art Nouveau, un movimiento artístico que transformó la estética y el diseño a finales del siglo XIX y principios del XX. Aquí, los visitantes tendrán la oportunidad de sumergirse en un recorrido que abarca las múltiples facetas de este estilo innovador, desde la pintura y la arquitectura hasta el mobiliario y la joyería.</p>
-          <div id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6752424200936!2d-3.6975003245170264!3d40.416044655681944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228831aa2ecbf%3A0x5a934a7882cb528f!2sMuseo%20Nacional%20Thyssen-Bornemisza!5e0!3m2!1ses!2ses!4v1730818125848!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-        <div id="llegar">
-          <h1>Como llegar</h1>
-          <div class="accordion accordion-flush" id="accordionFlushExample" >
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body" style="background-color: #7EA099;">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
+    <section id="pintura">
+        <div>
+          <h1>PINTURA</h1>
+          <div class="grid-wrapper1">
+            <div class="square1">
+                  <img
+                      src="img/111794e399a9817a09a46b04424a9e53.png" 
+                      alt="" data-aos="fade-up"/>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
+            <div class="square2">
+                  <img
+                      src="img/1325798125_03_wikipedia.jpg"
+                      alt="" />
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
+            <div class="square1">
+                  <img
+                      src="img/2016_10_29_Bruselas_Tassel.jpg"
+                      alt="" data-aos="zoom-in-up" />
+            </div>
+            <div class="square2">
+                  <img
+                      src="img/joyeria horizontal.jpg"
+                      alt="" data-aos="flip-left" />
+            </div>
+            <div class="square3">
+                <img
+                    src="img/111794e399a9817a09a46b04424a9e53.png"
+                    alt="" />
+            </div>
+            <div class="square4">
+                <img
+                    src="img/1325798125_03_wikipedia.jpg"
+                    alt="" />
+            </div>
+            <div class="square3">
+                <img
+                    src="img/2016_10_29_Bruselas_Tassel.jpg"
+                    alt="" />
+            </div>
+            <div class="square4">
+                <img
+                    src="img/joyeria horizontal.jpg"
+                    alt="" />
             </div>
           </div>
         </div>
+    </section>
+
+    <section id="arquitectura">
+      <div>
+        <h1>ARQUITECTURA</h1>
+        <div class="grid-wrapper1">
+          <div class="square5">
+                <img
+                    src="img/111794e399a9817a09a46b04424a9e53.png"
+                    alt="" />
+          </div>
+          <div class="square6">
+                <img
+                    src="img/1325798125_03_wikipedia.jpg"
+                    alt="" />
+          </div>
+          <div class="square5">
+                <img
+                    src="img/2016_10_29_Bruselas_Tassel.jpg"
+                    alt="" />
+          </div>
+          <div class="square6">
+                <img
+                    src="img/joyeria horizontal.jpg"
+                    alt="" />
+          </div>
+          <div class="square7">
+              <img
+                  src="img/111794e399a9817a09a46b04424a9e53.png"
+                  alt="" />
+          </div>
+          <div class="square8">
+              <img
+                  src="img/1325798125_03_wikipedia.jpg"
+                  alt="" />
+          </div>
+          <div class="square7">
+              <img
+                  src="img/2016_10_29_Bruselas_Tassel.jpg"
+                  alt="" />
+          </div>
+          <div class="square8">
+              <img
+                  src="img/joyeria horizontal.jpg"
+                  alt="" />
+          </div>
+      </div>
+    </section>
         
-      </section>
+    <section id="mobiliario">
+      <div>
+        <h1>MOBILIARIO</h1>
+        <div class="grid-wrapper1">
+          <div class="square1">
+                <img
+                    src="img/111794e399a9817a09a46b04424a9e53.png"
+                    alt="" />
+          </div>
+          <div class="square2">
+                <img
+                    src="img/1325798125_03_wikipedia.jpg"
+                    alt="" />
+          </div>
+          <div class="square1">
+                <img
+                    src="img/2016_10_29_Bruselas_Tassel.jpg"
+                    alt="" />
+          </div>
+          <div class="square2">
+                <img
+                    src="img/joyeria horizontal.jpg"
+                    alt="" />
+          </div>
+          <div class="square3">
+              <img
+                  src="img/111794e399a9817a09a46b04424a9e53.png"
+                  alt="" />
+          </div>
+          <div class="square4">
+              <img
+                  src="img/1325798125_03_wikipedia.jpg"
+                  alt="" />
+          </div>
+          <div class="square3">
+              <img
+                  src="img/2016_10_29_Bruselas_Tassel.jpg"
+                  alt="" />
+          </div>
+          <div class="square4">
+              <img
+                  src="img/joyeria horizontal.jpg"
+                  alt="" />
+        </div>
+      </div>
+    </section>      
+        
+    <section id="joyeria">
+      <div>
+        <h1>JOYERÍA</h1>
+        <div class="grid-wrapper1">
+          <div class="square5">
+            <img
+              src="img/111794e399a9817a09a46b04424a9e53.png"
+              alt="" />
+          </div>
+          <div class="square6">
+                  <img
+                      src="img/1325798125_03_wikipedia.jpg"
+                      alt="" />
+          </div>
+          <div class="square5">
+                  <img
+                      src="img/2016_10_29_Bruselas_Tassel.jpg"
+                      alt="" />
+          </div>
+          <div class="square6">
+                  <img
+                      src="img/joyeria horizontal.jpg"
+                      alt="" />
+          </div>
+          <div class="square7">
+                <img
+                    src="img/111794e399a9817a09a46b04424a9e53.png"
+                    alt="" />
+          </div>
+          <div class="square8">
+                <img
+                    src="img/1325798125_03_wikipedia.jpg"
+                    alt="" />
+          </div>
+          <div class="square7">
+              <img
+                    src="img/2016_10_29_Bruselas_Tassel.jpg"
+                    alt="" />
+          </div>
+          <div class="square8">
+                <img
+                    src="img/joyeria horizontal.jpg"
+                    alt="" />
+          </div>
+        </div>
+      </div>    
+    </section>
+       
+
+      
     
       <!-- FOOTER -->
 
-      <section class="footer">
+    <section class="footer">
         
         <div class="container">
             <div class="row">
@@ -211,6 +404,9 @@
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- JAVASCRIPT PROPIO -->
     <script src="js/script.js"></script>

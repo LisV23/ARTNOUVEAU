@@ -79,8 +79,6 @@ body {
     width: 90%;
 }
 
-/* CARRUSEL */
-
 
 
 /* COMPRA ENTRADAS */
@@ -115,7 +113,7 @@ body {
 
 #intro {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 6rem;
     background-color: #D6F5F0;
     position: relative;
 
@@ -125,7 +123,7 @@ body {
     color: #8D52A3;
     display: flex;
     justify-content: center;
-    margin: 0%;
+    padding-bottom: 4rem;
     font-size: 4rem;
 }
 
@@ -138,11 +136,11 @@ body {
 
 #intro > div > p {
     text-align: justify;
-    width: 65%;
-    font-size: 1.05em;
-    padding: 5em 8em 0em;
-    background-image: url('../img/mar.png');
-    /* background-color: red; */
+    width: 55%;
+    font-size: 1.25em;
+    padding: 6.25em 3em;
+    background-color: #A0A6D6;
+    border-radius: 8rem 0rem;
 }
 
 #intro > div > div {
@@ -157,16 +155,115 @@ body {
 }
 
 #intro > .introleft {
-    padding: 3rem 0rem 3rem 4.75rem;
+    padding: 6rem 0rem 6rem 4.75rem;
 }
 
 #intro > .introleft > p {
-    background-image: url('../img/marcco.png');
+    background-color: #A0A6D6;
+    border-radius: 0rem 8rem;
+
 }
+
+
 
 
 /* VISITANOS*/
 
+#horarios .titulo {
+    color: #D6F5F0;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    font-size: 4rem;
+}
+
+#horarios {
+    display: flex;
+    flex-direction: column;
+}
+  
+#horarios .dias {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+#horarios .semana {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(255, 255, 255);
+}
+  
+#horarios .iconocalendar {
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+}
+
+
+#donde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+  
+#donde .titulo {
+    color: #D6F5F0;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    font-size: 4rem;        
+}
+  
+.cont {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+#mapa {
+    flex: 1;
+    max-width: 600px;
+}
+  
+.map {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    padding: 7rem 0rem 0rem 1rem;
+}
+  
+.iconomap {
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+}
+
+
+#llegar .titulo {
+    color: #D6F5F0;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    font-size: 4rem;
+}
+
+
+.accordion {
+    width: 80%; 
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+}
+
+.accordion-body {
+    max-width: 100%;
+    color: #ffffff;
+}
 
 .accordion-item .accordion-collapse .accordion-body {
     font-size: 1.25rem;
@@ -181,7 +278,20 @@ body {
     font-size: 2rem;
     text-align: center;
 }
-  
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button.collapsed {
+    background-color: #7EA099;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #5B8B6F;
+    color: white;
+}
 
 
 
@@ -192,7 +302,11 @@ body {
 }
 
 .galeria h1 {
-    margin-bottom: 0;
+    color: #8D52A3;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    font-size: 4rem;
 }
 
 
@@ -290,6 +404,18 @@ body {
     padding: 1rem 10rem;
 }
 
+.vermas .btn-primary {
+    background-color: #7EA099;
+    color: white;
+}
+
+.vermas .btn-primary:hover {
+    background-color: #2E5A51;
+}
+
+
+
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -384,6 +510,142 @@ footer {
 }
 
 
+/* PESTAÑA GALERIA */
+
+.fondo > div > h1 {
+    font-size: 3rem;
+    background-image: url(../img/patron.jpg);
+    padding: 6rem 3rem 2rem 3rem;
+    text-align: left;
+    color: #8D52A3;
+}
+
+.carousel-inner {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.carrousel-fade .carrousel-item {
+    transition: opacity 1.5s ease-in-out; 
+
+}
+
+.carrousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+
+#pintura {
+    background-color: #A0A6D6;
+}
+
+
+.grid-wrapper1 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper1 {
+    background-color: #A0A6D6;
+    padding: 4em 10%;
+    width: 100%;
+}
+
+.grid-wrapper1 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper1 > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* .grid-wrapper1 > div:hover > img {
+    transform: scale(1.05); 
+    opacity: 0.9; 
+} */
+
+.grid-wrapper1 > div:hover > img {
+    transform: scale(1.08) rotate(1deg); /* Escala y rotación leve */
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.grid-wrapper1 .square1 {
+    grid-column: span 1;
+}
+
+.grid-wrapper1 .square1 > img {
+    border-radius: 0rem 8rem 0rem 0rem;
+}
+
+.grid-wrapper1 .square2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.grid-wrapper1 .square2 > img {
+    border-radius: 8rem 0rem 0rem 0rem;
+}
+.grid-wrapper1 .square3 {
+    grid-row: span 1;
+    border-radius: 5px;
+}
+
+.grid-wrapper1 .square3 > img {
+    border-radius: 0rem 0rem 0rem 8rem;
+}
+
+.grid-wrapper1 .square4 {
+    grid-row: span 1;
+}
+
+.grid-wrapper1 .square4 > img {
+    border-radius: 0rem 0rem 8rem 0rem;
+}
+
+.grid-wrapper1 .square5 {
+    grid-column: span 1;
+}
+
+.grid-wrapper1 .square5 > img {
+    border-radius: 8rem 0rem 0rem 0rem;
+}
+
+.grid-wrapper1 .square6 {
+    grid-column: span 1;
+}
+
+.grid-wrapper1 .square6 > img {
+    border-radius: 0rem 8rem 0rem 0rem;
+}
+
+.grid-wrapper1 .square7 {
+    grid-column: span 1;
+}
+
+.grid-wrapper1 .square7 > img {
+    border-radius: 0rem 0rem 8rem 0rem;
+}
+
+.grid-wrapper1 .square8 {
+    grid-column: span 1;
+}
+
+.grid-wrapper1 .square8 > img {
+    border-radius: 0rem 0rem 0rem 8rem;
+}
+
+
+
+
+
 /* FOOTER */
 
 .container {
@@ -418,13 +680,6 @@ ul {
     color: white;
     font-size: 1.6rem;
 }
-
-/* .footer-col > h5 {
-	font-size: 25px;
-    margin-bottom: 2rem;
-    color: white;
-}
- */
 
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -483,8 +738,14 @@ ul {
 
 /* MEDIA-QUERY */
 
+
 @media screen and (max-width: 768px) {
     .grid-wrapper > div {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .grid-wrapper1 > div {
         grid-column: span 1;
         grid-row: span 2;
     }
